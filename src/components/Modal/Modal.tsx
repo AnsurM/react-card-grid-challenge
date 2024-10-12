@@ -106,6 +106,7 @@ export const Modal: FC<ModalProps> = ({ gif, onClose }) => {
           </Styled.SkeletonContainer>
         )}
         <Styled.Gif
+          data-testid="modal-image"
           className={imageLoaded ? "loaded" : ""}
           src={gif.images.original.url}
           loading="lazy"
